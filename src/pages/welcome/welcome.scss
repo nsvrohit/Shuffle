@@ -1,0 +1,30 @@
+page-welcome {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    ion-header {
+        .toolbar {
+          .toolbar-background {
+            background-color: #86BBD8;
+          }
+
+        }
+      }
+    .sign-up {
+        margin: 0%;
+        border: 0%;
+        height: 3cm;
+        width: 100%;
+        text-align: center;
+        font-size: 1.5cm;
+        background-color: #F6AE2D;
+    }
+    .log-in {
+        margin: 0%;
+        border: 0%;
+        height: 3cm;
+        width: 100%;
+        text-align: center;
+        font-size: 1.5cm;
+        background-color: #2F4858;
+    }
+    background-color: #86BBD8;
+}
