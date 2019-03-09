@@ -1,0 +1,51 @@
+page-search {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+.container {
+	background-color: #86BBD8;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    text-align: center;
+	min-height: 5cm;
+	
+	svg {
+		max-width: fit-content;
+		width: 100%;
+		fill: none;
+		stroke: #2F4858;
+		stroke-width: 8;
+		
+		tspan > tspan {
+			stroke-dasharray: 1500;
+			stroke-dashoffset: -1500;
+			
+			@for $i from 1 through 15 {
+				
+				&:nth-of-type(#{$i}) {
+					animation: draw 300ms #{$i * 150}ms forwards;
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+@keyframes draw {
+	
+	100% {
+		stroke-dashoffset: 0;
+	}
+	
+}
+.form-style{
+    background-color: #86BBD8;
+}
+.submit-button{
+    background-color: #2F4858;
+}
+}
